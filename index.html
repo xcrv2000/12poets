@@ -138,7 +138,7 @@
 (t8n-depart:&quot;slide-down&quot;)+(t8n-arrive:&quot;slide-down&quot;)+(t8n-time:2s)[[关门-&gt;10]]
 </tw-passagedata><tw-passagedata pid="21" name="9.1" tags="" position="601,1557" size="100,100">电梯门在你身后关上了。
 你踏上了通向未知的道路。</tw-passagedata><tw-passagedata pid="22" name="10" tags="" position="425,1701" size="100,100">(if:visits is 1)[电梯嗡嗡上行。
-电梯门打开了，外面是一座石塔在远方矗立着。](if:visits is &gt;= 2)[一座石塔在远方矗立着。
+电梯门打开了，外面是一座石塔。](if:visits is &gt;= 2)[一座石塔在远方矗立着。
 ]
 
 
@@ -195,7 +195,7 @@
 (if:$onlift is false)[(t8n-depart:&quot;dissolve&quot;)+(t8n-arrive:&quot;dissolve&quot;)+(t8n-time:1.2s)[[等待-&gt;13]]
 (t8n-depart:&quot;fade-left&quot;)+(t8n-arrive:&quot;slide-left&quot;)+(t8n-time:1.5s)[[出去-&gt;13.1]]](if:$onlift is true)[
 ]
-(t8n-depart:&quot;slide-down&quot;)+(t8n-arrive:&quot;slide-down&quot;)+(t8n-time:2s)[[关门-&gt;14]]</tw-passagedata><tw-passagedata pid="30" name="13.1" tags="" position="622,2104" size="100,100">在你走出电梯的瞬间，无处不在的水呛满了你的肺并将你压扁。这或许不是一个好主意。
+(t8n-depart:&quot;slide-down&quot;)+(t8n-arrive:&quot;slide-down&quot;)+(t8n-time:2s)[[关门-&gt;14]]</tw-passagedata><tw-passagedata pid="30" name="13.1" tags="" position="622,2104" size="100,100">在你走出电梯的瞬间，无处不在的水呛满了你的肺。这或许不是一个好主意。
 电梯门在你身后关上了。</tw-passagedata><tw-passagedata pid="31" name="14" tags="" position="428,2241" size="100,100">(if:visits is 1)[电梯嗡嗡上行。
 电梯门打开了，外面是楼梯间。](if:visits is &gt;= 2)[一个普通的旧楼梯间。
 唯一的特殊之处便是没有门窗。]
@@ -249,6 +249,7 @@
 有什么东西从电梯里下去了。(set: $onlift to false)](if:visits is 2)[岩浆在大地上流动着。
 一群红皮肤的佝偻生物在漫无目的的游荡。
 ](if:visits is &gt;= 3)[铁链从无穷高处垂下，哗哗作响。
+  
 
 ]
 
