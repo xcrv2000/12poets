@@ -246,7 +246,7 @@
 (t8n-depart:&quot;slide-up&quot;)+(t8n-arrive:&quot;slide-up&quot;)+(t8n-time:2s)[[关门-&gt;5]]</tw-passagedata><tw-passagedata pid="38" name="17.1" tags="" position="622,861.5" size="100,100">电梯门在你身后关上了。
 光线在高温下扭曲着，犹如海市蜃楼里的居民。</tw-passagedata><tw-passagedata pid="39" name="18" tags="" position="439,2472" size="100,100">(if:visits is 1)[电梯嗡嗡下行。
 电梯门打开了，外面是燃烧的大地。
-有什么东西从电梯里下去了。(set: $onlift to false)](if:visits is 2)[岩浆在大地上流动着。
+(if:$onlift is true)[有什么东西从电梯里下去了。](set: $onlift to false)](if:visits is 2)[岩浆在大地上流动着。
 一群红皮肤的佝偻生物在漫无目的的游荡。
 ](if:visits is &gt;= 3)[铁链从无穷高处垂下，哗哗作响。
 
